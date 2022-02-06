@@ -87,7 +87,25 @@
       </div>
 
     </div>
-  </header><!-- End Header -->
+	  
+ <!--Audio Tag-->
+	<audio src="assets/a.mp3" id="myAudio"></audio>
+	<button onClick="playMyAudio()">Play</button>
+	<button onClick="pauseMyAudio()">Stop</button>
+    <script>
+     function playMyAudio(){
+       document.getElementById("myAudio").play();
+      document.getElementById("audioStatus").innerHTML="Audio is Playing";	 
+      
+     }
+     function pauseMyAudio(){
+       document.getElementById("myAudio").pause();
+      document.getElementById("audioStatus").innerHTML="Audio Paused";	
+     }
+   </script>
+<!--Audio Tag end-->
+
+</header><!-- End Header -->
 
   <!-- ======= About Section ======= -->
   <section id="about" class="about">
@@ -104,10 +122,20 @@
           <img src="assets/img/profile.jpeg" class="img-fluid" alt="">
         </div>
         <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-          <p>My name is Manmohan Sharma, and I am a Sr. security consultant at Ernst and Young LLP. I work on Cyber forensics and Cyber Security projects.
-             I did a bachelor's degree in Electronics and Communications during 2012 - 2016. I started my career in 2016 as an Intern. During and after my studies, I grew up while working on the IT Security project and decided to continue with Information Security. Today, I have 6+ years of experience in Information security.
-             I have exposure to Vulnerability Management, Risk Management, Web Application Security, Network Security, Phishing, Red Teaming, Digital Forensics, Cyber Investigations, ISO 27001, PCI DSS, Security Operating center, and Incident Response. During my journey in information security, I have worked as BlackBox/GrayBox, and White Box Tester and continuing as Ethical Hacker and Investigator.
+          <p>
+		  Hey there, I'm manmohan sharma! I'm a professional Information Security Consultant. I work to secure the information with private & public sector.
+		  </p>
+		  <p>
+		  I did a bachelor's degree in Electronics and Communications during 2012 - 2016. I started my career in 2016 as an Intern. During and after my studies, 
+		  I grew up while working on the IT Security project and decided to continue with Information Security. Today, I have 6+ years of experience in Information security.
+		  </p>
+		  <p>
+		  I have exposure to Vulnerability Management, Risk Management, Web Application Security, Network Security, Phishing, Red Teaming, Digital Forensics, Cyber Investigations, 
+		  ISO 27001, PCI DSS, Security Operating center, and Incident Response. During my journey in information security, I have worked as BlackBox/GrayBox, and White Box Tester 
+		  and continuing as Ethical Hacker and Investigator.
           </p>
+		<p><b>CTF - Capture the Flag</b></p>
+		<p>BTLO - BLueTeamLabsOnline  &  KnightCTF</p>
           <div class="row">
             <div class="col-lg-6">
             </div>
@@ -387,8 +415,7 @@
           <div class="info-box">
             <i class="bx bx-map"></i>
             <h3>My Address</h3>
-            <p>TGV0cyBO==</p>
-            <p>b3Qgc2hhcmUgUHVibGljbHkhCg==</p>
+            <p>28.453691,77.0803983</p>
             <p>IN 122001</p>
           </div>
         </div>
@@ -439,7 +466,7 @@
   <script src="assets/vendor/typed.js/typed.min.js"></script>
   <script type="text/javascript">
     var typed = new Typed('.typing',{
-      strings: ["a Cyber Security Consultant", "a Incident Responder", "an Information Security Enthusiast"],
+      strings: ["a Cyber Security Consultant", "a Incident Responder", "a Penetration Tester", "an Information Security Enthusiast"],
       loop: true,
       typeSpeed: 65,
       backSpeed: 65
